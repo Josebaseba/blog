@@ -1,0 +1,19 @@
+{{!< default}}
+<header id="blog-header"{{#if @site.cover_image}} class="has-cover"{{/if}}>
+	<div class="inner">
+		<h1 class="blog-name"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+		{{#if @site.description}}
+		<span class="blog-description">{{@site.description}}</span>
+		{{/if}}
+	</div>
+</header>
+
+<div id="index" class="container">
+
+	<main class="content" role="main">
+
+		{{> "loop"}}
+
+	</main>
+
+</div>
